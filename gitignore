@@ -60,3 +60,4 @@ go
 .zcompdump-ubuntu-5.2
 playground/
 software/
+.node_repl_history
