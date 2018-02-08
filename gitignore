@@ -61,3 +61,7 @@ go
 playground/
 software/
 .node_repl_history
+.cargo/
+.multirust
+.rustup/
+.zprofile
