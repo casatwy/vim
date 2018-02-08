@@ -92,6 +92,7 @@ set incsearch
 set autoindent
 set autowrite
 set hlsearch
+set encoding=utf-8
 
 "删除多余空格
 "" Delete trailing white space on save, useful for Python and CoffeeScript ;)
