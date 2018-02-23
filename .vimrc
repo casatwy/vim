@@ -86,6 +86,10 @@ filetype plugin indent on
 syntax on
 filetype on
 
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+
 set ambiwidth=double
 set autoread
 set autoindent
@@ -118,10 +122,6 @@ hi Pmenu    ctermfg=white  ctermbg=magenta    cterm=none
 hi PmenuSel ctermfg=white  ctermbg=lightgray  cterm=none
 hi linenr   ctermfg=darkgray
 
-set shiftwidth=4
-set tabstop=4
-set softtabstop=4
-
 autocmd FileType c setlocal path+=include
 
 autocmd FileType js set shiftwidth=2
@@ -152,6 +152,7 @@ au FileType go nmap <c-]> gd
 au FileType go set shiftwidth=4
 au FileType go set tabstop=4
 au FileType go set softtabstop=4
+au FileType go set expandtab
 au FileType go nmap <leader>f :GoTestFunc<CR>
 
 map <leader>C :CtrlPClearCache<CR>
