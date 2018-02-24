@@ -66,3 +66,6 @@ software/
 .composer/
 mac-cli/
 .ShadowsocksX/
+.mycli-history
+.mycli.log
+.myclirc

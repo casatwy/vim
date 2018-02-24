@@ -69,6 +69,14 @@ Plugin 'Lokaltog/vim-easymotion'
 let g:EasyMotion_leader_key='f'
 
 Plugin 'fatih/vim-go'
+let g:go_highlight_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_build_constraints = 1
+
 Plugin 'Valloric/YouCompleteMe'
 let g:ycm_autoclose_preview_window_after_insertion = 1
 
@@ -144,6 +152,7 @@ au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
 au FileType go nmap <leader>c <Plug>(go-coverage)
 au FileType go nmap <leader>f :GoTestFunc<CR>
+au FileType go nmap <leader>d :GoDoc<CR>
 
 map <leader>nerd<CR> :NERDTree<CR>
 map <leader>tag<CR> :TagbarToggle<CR>
