@@ -70,3 +70,4 @@ mac-cli/
 .android/
 .wget-hsts
 .zcompdump*
+.yarnrc
