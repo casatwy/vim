@@ -33,6 +33,7 @@ set nofoldenable
 " let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
 
 Plugin 'majutsushi/tagbar'
+let g:tagbar_autofocus = 1
 let g:tagbar_ctags_bin = '/usr/local/bin/ctags'
 let g:tagbar_autofocus = 1
 let g:tagbar_show_linenumbers = 1
@@ -70,37 +71,43 @@ let g:EasyMotion_leader_key='f'
 
 Plugin 'fatih/vim-go'
 let g:go_highlight_types = 1
-let g:go_highlight_fields = 1
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
 let g:go_highlight_operators = 1
-let g:go_highlight_extra_types = 1
-let g:go_highlight_build_constraints = 1
+" let g:go_highlight_fields = 1
+" let g:go_highlight_extra_types = 1
+" let g:go_highlight_build_constraints = 1
 
 Plugin 'Valloric/YouCompleteMe'
 let g:ycm_autoclose_preview_window_after_insertion = 1
 
 call vundle#end()
 filetype plugin indent on
+syntax on
 filetype on
+
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
 
 set ambiwidth=double
 set autoread
+set autoindent
+set autowrite
 set backspace=indent,eol,start
+set cscopetag
 set expandtab
+set encoding=utf-8
 set hidden             " Hide buffers when they are abandoned
+set hlsearch
 set ignorecase		" Do case insensitive matching
+set incsearch
 set lbr
 set nu
 set showcmd		" Show (partial) command in status line.
 set showmatch		" Show matching brackets.
 set smarttab
 set smartcase		" Do smart case matching
-set incsearch
-set autoindent
-set autowrite
-set hlsearch
-set encoding=utf-8
 
 "删除多余空格
 "" Delete trailing white space on save, useful for Python and CoffeeScript ;)
@@ -115,18 +122,11 @@ hi Pmenu    ctermfg=white  ctermbg=magenta    cterm=none
 hi PmenuSel ctermfg=white  ctermbg=lightgray  cterm=none
 hi linenr   ctermfg=darkgray
 
-"php auto complete
-function AddPHPFunctionList()
-    set dictionary-=~/.vim/dic/php.dic dictionary+=~/.vim/dic/php.dic
-    set complete-=k complete+=k
-endfunction
-
-set shiftwidth=4
-set tabstop=4
-set softtabstop=4
-
-autocmd FileType php call AddPHPFunctionList()
 autocmd FileType c setlocal path+=include
+
+autocmd FileType sh set shiftwidth=2
+autocmd FileType sh set tabstop=2
+autocmd FileType sh set softtabstop=2
 
 autocmd FileType js set shiftwidth=2
 autocmd FileType js set tabstop=2
@@ -151,14 +151,19 @@ au FileType go nmap <leader>r <Plug>(go-run)
 au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
 au FileType go nmap <leader>c <Plug>(go-coverage)
+au FileType go nmap <leader>d :GoDoc<CR>
+au FileType go nmap <c-]> gd
+au FileType go set shiftwidth=4
+au FileType go set tabstop=4
+au FileType go set softtabstop=4
+au FileType go set expandtab
 au FileType go nmap <leader>f :GoTestFunc<CR>
 au FileType go nmap <leader>d :GoDoc<CR>
 
+map <leader>C :CtrlPClearCache<CR>
 map <leader>nerd<CR> :NERDTree<CR>
 map <leader>tag<CR> :TagbarToggle<CR>
 map <leader>w+ :vertical resize +2<CR>
 map <leader>w- :vertical resize -2<CR>
 map <leader>h+ :resize +2<CR>
 map <leader>h- :resize -2<CR>
-map <leader>C :CtrlPClearCache<CR>
-map <leader>' ysiw"

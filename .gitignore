@@ -28,8 +28,6 @@
 .vim
 .viminfo
 .vue-templates
-.zcompdump-Casa's MacBook Pro @ BL-5.3
-.zcompdump-casa的MacBook Pro-5.3
 .zsh-update
 .zsh_history
 .zshrc
@@ -69,3 +67,6 @@ mac-cli/
 .mycli-history
 .mycli.log
 .myclirc
+.android/
+.wget-hsts
+.zcompdump*
