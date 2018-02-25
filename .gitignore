@@ -71,3 +71,4 @@ mac-cli/
 .wget-hsts
 .zcompdump*
 .yarnrc
+.local/
