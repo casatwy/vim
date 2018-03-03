@@ -64,8 +64,14 @@ software/
 .composer/
 mac-cli/
 .ShadowsocksX/
+.mycli-history
+.mycli.log
+.myclirc
 .android/
 .wget-hsts
 .zcompdump*
 .itmstransporter/
 .putty/
+.yarnrc
+.local/
+zhaofang/

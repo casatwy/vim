@@ -158,6 +158,7 @@ au FileType go set tabstop=4
 au FileType go set softtabstop=4
 au FileType go set expandtab
 au FileType go nmap <leader>f :GoTestFunc<CR>
+au FileType go nmap <leader>d :GoDoc<CR>
 
 map <leader>C :CtrlPClearCache<CR>
 map <leader>nerd<CR> :NERDTree<CR>
