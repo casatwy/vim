@@ -73,3 +73,5 @@ mac-cli/
 .yarnrc
 .local/
 zhaofang/
+.itmstransporter/
+.putty/
