@@ -70,6 +70,8 @@ mac-cli/
 .android/
 .wget-hsts
 .zcompdump*
+.itmstransporter/
+.putty/
 .yarnrc
 .local/
 zhaofang/
