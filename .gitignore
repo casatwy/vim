@@ -75,3 +75,5 @@ mac-cli/
 .yarnrc
 .local/
 zhaofang/
+node_modules/
+package-lock.json
