@@ -77,3 +77,6 @@ mac-cli/
 zhaofang/
 node_modules/
 package-lock.json
+.itmstransporter/
+.putty/
+.wns/
