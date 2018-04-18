@@ -80,3 +80,5 @@ package-lock.json
 .itmstransporter/
 .putty/
 .wns/
+.startPrivoxy
+.stopPrivoxy
