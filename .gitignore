@@ -82,3 +82,5 @@ package-lock.json
 .wns/
 .dbshell
 .mongorc.js
+.startPrivoxy
+.stopPrivoxy
