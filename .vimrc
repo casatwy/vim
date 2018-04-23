@@ -80,6 +80,7 @@ let g:go_highlight_operators = 1
 
 Plugin 'Valloric/YouCompleteMe'
 let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_python_binary_path = '/usr/local/bin/python3'
 
 call vundle#end()
 filetype plugin indent on
