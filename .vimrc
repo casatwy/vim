@@ -151,14 +151,14 @@ au FileType go nmap <leader>r <Plug>(go-run)
 au FileType go nmap <leader>b <Plug>(go-build)
 au FileType go nmap <leader>t <Plug>(go-test)
 au FileType go nmap <leader>c <Plug>(go-coverage)
-au FileType go nmap <leader>d :GoDoc<CR>
+au FileType go nmap <leader>f :GoTestFunc<CR>
+au FileType go nmap <leader>d :GoDebugStart<CR>
 au FileType go nmap <c-]> gd
+au FileType go nmap <c-d> :GoDoc<CR>
 au FileType go set shiftwidth=4
 au FileType go set tabstop=4
 au FileType go set softtabstop=4
 au FileType go set expandtab
-au FileType go nmap <leader>f :GoTestFunc<CR>
-au FileType go nmap <leader>d :GoDoc<CR>
 
 map <leader>C :CtrlPClearCache<CR>
 map <leader>nerd<CR> :NERDTree<CR>
