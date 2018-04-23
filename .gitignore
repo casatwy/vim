@@ -88,3 +88,4 @@ package-lock.json
 *.swp
 .bash_profile
 anaconda3/
+.conda/
