@@ -86,3 +86,5 @@ package-lock.json
 .stopPrivoxy
 .dlv
 *.swp
+.bash_profile
+anaconda3/
