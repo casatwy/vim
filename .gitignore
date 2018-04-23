@@ -80,6 +80,9 @@ package-lock.json
 .itmstransporter/
 .putty/
 .wns/
+.dbshell
+.mongorc.js
 .startPrivoxy
 .stopPrivoxy
 .dlv
+*.swp
