@@ -89,3 +89,4 @@ package-lock.json
 .bash_profile
 anaconda3/
 .conda/
+.electron/
