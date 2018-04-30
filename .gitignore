@@ -91,3 +91,4 @@ package-lock.json
 anaconda3/
 .conda/
 .electron/
+.pydistutils.cfg
