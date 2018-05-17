@@ -141,6 +141,11 @@ autocmd FileType html set shiftwidth=2
 autocmd FileType html set tabstop=2
 autocmd FileType html set softtabstop=2
 
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
+autocmd FileType css set shiftwidth=2
+autocmd FileType css set tabstop=2
+autocmd FileType css set softtabstop=2
+
 set timeout ttimeoutlen=100 timeoutlen=5000
 
 map <BS> gcc
