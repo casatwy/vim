@@ -78,8 +78,8 @@ let g:go_highlight_operators = 1
 " let g:go_highlight_extra_types = 1
 " let g:go_highlight_build_constraints = 1
 
-Plugin 'Valloric/YouCompleteMe'
-let g:ycm_autoclose_preview_window_after_insertion = 1
+" Plugin 'Valloric/YouCompleteMe'
+" let g:ycm_autoclose_preview_window_after_insertion = 1
 " let g:ycm_server_keep_logfiles = 1
 " let g:ycm_server_log_level = 'debug'
 

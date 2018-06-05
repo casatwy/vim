@@ -93,3 +93,4 @@ anaconda3/
 .electron/
 .pydistutils.cfg
 .node-gyp/
+db/
