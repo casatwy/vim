@@ -92,3 +92,4 @@ anaconda3/
 .conda/
 .electron/
 .pydistutils.cfg
+db/
