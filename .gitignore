@@ -94,3 +94,6 @@ anaconda3/
 .pydistutils.cfg
 .node-gyp/
 db/
+.mkshrc
+.rvm/
+.zlogin
