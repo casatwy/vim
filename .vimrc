@@ -13,6 +13,9 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'chr4/nginx.vim'
+Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'mattn/emmet-vim'
 Plugin 'posva/vim-vue'
@@ -21,8 +24,19 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-commentary'
 Plugin 'vim-scripts/a.vim'
-Plugin 'godlygeek/tabular'
 Plugin 'tpope/vim-surround'
+
+" Plugin 'vim-syntastic/syntastic'
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+" let g:syntastic_javascript_checkers = ['eslint']
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+" let g:syntastic_javascript_eslint_exe = 'npm run lint --'
+
 Plugin 'plasticboy/vim-markdown'
 let g:vim_markdown_folding_disabled=1
 let g:vim_markdown_no_default_key_mappings=1
@@ -31,6 +45,9 @@ set nofoldenable
 " Plugin 'vim-scripts/taglist.vim'
 " let Tlist_Show_One_File=1
 " let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+
+Plugin 'pangloss/vim-javascript'
+let g:javascript_plugin_jsdoc = 1
 
 Plugin 'majutsushi/tagbar'
 let g:tagbar_autofocus = 1
@@ -165,7 +182,7 @@ au FileType go nmap <c-d> :GoDoc<CR>
 au FileType go set shiftwidth=4
 au FileType go set tabstop=4
 au FileType go set softtabstop=4
-au FileType go set expandtab
+
 
 map <leader>C :CtrlPClearCache<CR>
 map <leader>nerd<CR> :NERDTree<CR>
