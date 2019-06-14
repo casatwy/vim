@@ -21,6 +21,7 @@ Plugin 'mattn/emmet-vim'
 Plugin 'posva/vim-vue'
 Plugin 'othree/html5.vim'
 Plugin 'kien/ctrlp.vim'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'tpope/vim-commentary'
 Plugin 'vim-scripts/a.vim'
